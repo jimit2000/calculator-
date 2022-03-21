@@ -4,7 +4,7 @@
   
   # new terminal
   
-    cd frontend
+    cd calculator-
     npm i
     npm start
   
