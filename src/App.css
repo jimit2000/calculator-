@@ -109,6 +109,10 @@ html{
   font-size: 7rem;
   cursor: pointer;
 }
+.showHistory{
+  overflow: auto !important;
+
+}
 .showHistory h1{
   font-size: 4rem;
   font-weight: bold;
@@ -162,4 +166,4 @@ html{
 
 
 
-
+/* completed */

@@ -1,9 +1,11 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 const App = () => {
   const [calData, setCalData] = useState("");
   const [historyState, setHistory] = useState(false);
-  const [value, setValue] = useState([]);
+
+  const [value, setValue] = useLocalStorage("data",[""]);
   const historyData = useRef();
   const btnArray = [
     "1",
@@ -93,7 +95,9 @@ const App = () => {
           break;
         case "/":
           if (parseInt(res[2]) === 0) {
-            setCalData("Error");
+            // setCalData("Error");
+              alert("Numeber is not devided by zero");
+              setCalData("");
           } else {
             resData = parseInt(res[0]) / parseInt(res[2]);
             setCalData(resData);
