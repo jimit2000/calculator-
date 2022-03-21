@@ -1,0 +1,165 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+/* set root font size for this app */
+html{
+  font-size:10px;
+}
+
+/* main div  */
+.mainDiv{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #dfe6e9;
+  flex-direction: column;
+}
+
+
+/* calculator division */
+.calDiv{
+  height:80%;
+  width:35%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content: space-around;
+  border:1px solid black;
+  background-color: #b2bec3;
+
+}
+.calDiv input{
+  height:20%;
+  width:90%;
+  margin-top:20px;
+  background-color: white;
+
+  text-align:right;
+  font-size:5rem;
+  border: 1px solid black;
+  transition:0.2;
+  
+
+}
+
+/* calculator button */
+.btnDiv{
+  height:70%;
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.btnDiv input{
+
+  width:20%;
+  margin-left:4%; 
+  text-align: center;
+  border-radius:50%;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:3rem;
+  background-color: #636e72;
+  
+
+}
+.btnDiv input:hover{
+  /* background-color: #171717 !important; */
+  transform:scale(1.1);
+}
+
+
+/* humburger menu */
+
+.humburgermenu{
+  height:3rem;
+  width: 6rem;
+  align-self: flex-start;
+  transform: translateY(-5rem);
+  cursor: pointer;
+}
+.humburgermenu div{
+  height: 0.5rem;
+  width:5rem;
+  background-color: black;
+  margin-top: 0.5rem;
+  align-self:baseline
+}
+
+
+
+/* history */
+
+.history{
+  width:0;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  background-color:#8395a7;
+  left: 0;
+  z-index: 100;
+  transition: all 0.2s;
+}
+.close{
+  font-size: 7rem;
+  cursor: pointer;
+}
+.showHistory h1{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top:1rem ;
+}
+.showHistory p{
+  font-size: 3rem;
+  margin-top:1rem ;
+}
+
+
+/* make website responsive */
+
+@media (min-width:992px) and (max-width:1050px){
+  html{
+    font-size: 8px;
+  }
+  .calDiv{
+    width: 70%;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:992px){
+  html{
+    font-size: 8px;
+  }
+  .calDiv{
+    width: 70%;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px){
+  html{
+    font-size: 7px;
+  }
+  .calDiv{
+    width: 90%;
+  }
+}
+
+@media (max-width:576px){
+  html{
+    font-size: 7px;
+  }
+  .calDiv{
+    width: 90%;
+  }
+}
+
+
+
+
+
